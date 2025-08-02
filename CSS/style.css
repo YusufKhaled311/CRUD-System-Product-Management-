@@ -1,0 +1,79 @@
+body {
+    font-family: 'Oswald', 'sans-serif';
+}
+
+header {
+    background: #085078;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #085078, #51a69c);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #085078, #2e978b);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    position: relative;
+}
+
+nav h1 {
+
+    font-size: 2rem;
+
+
+}
+
+nav h1::after {
+    content: "";
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    width: 30%;
+    height: 4px;
+    background-color: peru;
+    transform: translateX(-50%);
+
+}
+
+input ::placeholder {
+    color: black !important;
+}
+
+label {
+    font-size: 1.1rem;
+}
+
+.btn {
+    padding: 10px 25px;
+    border: 2px solid;
+    background-color: #085078;
+
+}
+
+.btn1:hover,
+.btn1:focus {
+    background-color: peru;
+    
+}
+
+.btn2:hover,
+.btn2:focus {
+    background-color: #C63D2F;
+}
+
+thead {
+    border-bottom: 2px solid peru;
+}
+.fa-regular , .fa-trash-can
+{
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+@media screen and (max-width:768px) {
+    nav h1::after {
+
+
+        width: 60%;
+
+
+
+    }
+
+}
